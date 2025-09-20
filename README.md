@@ -148,8 +148,7 @@ A lógica de `/alerts/{userId}` verifica o histórico de apostas e retorna:
 
 ## 👨‍🏫 Autores
 
-- **Irana Pereira** – RM98593  
-- **Lucas Sobral** – RM98188
+- **Irana Pereira** – RM98593
 - **Lucas Vinicius** – RM98480 
 - **Mariana Melo** – RM98121 
 - **Mateus Iago** – RM550270

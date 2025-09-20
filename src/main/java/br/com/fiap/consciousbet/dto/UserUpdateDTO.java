@@ -2,39 +2,30 @@ package br.com.fiap.consciousbet.dto;
 
 import jakarta.validation.constraints.*;
 
-public class UserDTO {
+public class UserUpdateDTO {
 
-    private Long id;
-
-    @NotBlank(message = "Name is required")
+    @Size(min = 2, max = 100, message = "Name must be between 2 and 100 characters")
     private String name;
 
     @Email(message = "Email must be valid")
-    @NotBlank(message = "Email is required")
+    @Size(max = 150, message = "Email must not exceed 150 characters")
     private String email;
 
-    @NotNull(message = "Age is required")
     @Min(value = 18, message = "Age must be at least 18")
+    @Max(value = 120, message = "Age must not exceed 120")
     private Integer age;
 
-    public UserDTO() {
+    // Constructors
+    public UserUpdateDTO() {
     }
 
-    public UserDTO(Long id, String name, String email, Integer age) {
-        this.id = id;
+    public UserUpdateDTO(String name, String email, Integer age) {
         this.name = name;
         this.email = email;
         this.age = age;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
+    // Getters and Setters
     public String getName() {
         return name;
     }
