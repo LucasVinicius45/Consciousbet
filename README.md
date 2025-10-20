@@ -724,7 +724,7 @@ Para dúvidas ou problemas:
 **Instituição:** FIAP  
 **Disciplina:** Arquitetura Orientada a Serviços  
 **Professor:** Carlos Eduardo Machado  
-**Data:** 2024
+**Data:** 2025
 
 ---
 
